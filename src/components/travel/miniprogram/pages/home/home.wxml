@@ -1,0 +1,27 @@
+<!-- 最新消息 -->
+<text style="font-weiht:600">{{time}}</text>
+<text class="text">热门新闻</text>
+<swiper autoplay="{{bool}}" interval="{{num}}" indicator-dots="{{bool}}">
+<block wx:for="{{news}}" wx:key="i" >
+  <swiper-item>
+    <view bindtap="goDetails" data-id="{{item.id}}" class="d-flex-col" style="width:750rpx;height:600rpx">
+      <image style="width:600rex;height:400rpx" src="{{item.image}}"></image>
+      <text class="title">{{item.title}}</text>
+    </view>
+  </swiper-item>
+</block>
+</swiper>
+<!-- 热门信息 -->
+<text class="text">热门信息</text>
+<view>
+  <view wx:for="{{infos}}" wx:key="i" class="d-flex-col infoList">
+    <!-- 背景图 -->
+    <image  bindtap="goDetails" data-id="{{item.id}}" src="{{item.image}}"></image>
+    <!-- 信息标题 -->
+    <text class="font">{{item.title}}</text>
+    <!-- 作者 -->
+    <text style="font-weight:600">{{item.hint}}</text>
+  </view> 
+</view>
+
+

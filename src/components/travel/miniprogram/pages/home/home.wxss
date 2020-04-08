@@ -1,0 +1,35 @@
+/* miniprogram/pages/home/home.wxss */
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text{
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.title{
+  position: absolute;
+  top:0;
+  left: 75rpx;
+  color: rgb(20, 64, 92);
+  font-weight:600;
+}
+.infoList{
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.infoList image{
+  height: 315rpx;
+}
+.font{
+  color: rgb(20, 64, 92);
+  font-weight:600;
+}
